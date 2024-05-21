@@ -13,9 +13,18 @@ public class Main {
         System.out.println(miVariableCadenna);
         miVariableCadenna = "Sigamos creciendo en programación";
         System.out.println(miVariableCadenna);
-
-        //reglas para definir una variable en java
         */
+
+        //var = inferencia de tipos en java
+        var miVariableEntero2 = 10;
+        var miVariableCadena2 = "Seguimos estudiando";
+        System.out.println("miVariableEntero2 =" + miVariableEntero2);
+        System.out.println("miVariableCadena2 = " + miVariableCadena2);
+        //soutv + tab
+
+
+        /*
+        //reglas para definir una variable en java
         var usuario = "Augusto";
         var titular = "Estudiante";
         var union = titular + " " + usuario;
@@ -28,6 +37,6 @@ public class Main {
         //caracteres especiales con java
         var nombre = "Julian";
         System.out.println("Nueva Linea: \n"+nombre);
-
+        */
     }
 }
