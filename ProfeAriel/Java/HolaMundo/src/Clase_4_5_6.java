@@ -1,4 +1,6 @@
-class Clase_4Y5 {
+import java.util.Scanner;
+
+class Clase_4_5_6 {
     public static void main(String[] args) {
         /*
         byte numEnteriByte = (byte)129;
@@ -15,13 +17,13 @@ class Clase_4Y5 {
         System.out.println("numEnteroInt = " + numEnteroInt);
         System.out.println("Valor minimo del int: "+ Integer.MIN_VALUE);
         System.out.println("Valor maximo del int: "+ Integer.MAX_VALUE);
-        */
+
         /*var numEntero = 20;//sin punto numero entero
         System.out.println("numEntero = " + numEntero);
         var numFloat = 10.0F;//con punto se transforma en tipo double
         System.out.println("numFloat = " + numFloat);
         var numDouble = 10.0;
-        System.out.println("numDouble = " + numDouble);*/
+        System.out.println("numDouble = " + numDouble);
 
         //tipos primitivos tipo char
 
@@ -46,5 +48,50 @@ class Clase_4Y5 {
         System.out.println("varEnteroChar = " + varEnteroChar);
         int caracterChar = 'A';
         System.out.println("caracterChar = " + caracterChar);
+
+        boolean varBool = true;
+        System.out.println("varBool = " + varBool);
+
+        if(varBool){
+            System.out.println("La bandera es verde");
+        }
+        else{
+            System.out.println("La bandera es roja");
+        }
+        //algoritmo ¿ es mayor de edad ?
+        var edad = 15;// cambiar a 30 para la otra variable
+        //var adulto = edad >= 18;
+        if(edad >= 18){
+            System.out.println("eres mayor de edad");
+        }
+        else{
+            System.out.println("eres menor de edad");
+        }
+        //la aplicacion toma de referencia el si esta bien o no
+        // porque lo que hace es deshabilitar una linea o la
+        // linea que no se use al m,omento de tipear
+
+        //conversion de tipos primitivos
+        var edad = Integer.parseInt("20"); //concatena solamente si dejas el 20 con comillas
+        System.out.println("edad = " + (edad+1));
+        var valorPI = Double.parseDouble("3.1416");
+        System.out.println("valorPI = " + valorPI);
+
+        // pedir un valor
+        */var entrada = new Scanner(System.in);/*
+        System.out.println("Digite su edad");
+        edad = Integer.parseInt(entrada.nextLine());
+        System.out.println("edad = " + edad);
+*/
+        //conversion de tipos primitivos en java parte 2
+        var edadTexto = String.valueOf(10);
+        System.out.println("edadTexto = " + edadTexto);
+
+        var fraseChar = "programadores".charAt(3);
+        System.out.println("fraseChar = " + fraseChar);
+
+        System.out.println("Digite un caracter: ");
+        fraseChar = entrada.nextLine().charAt(0);
+        System.out.println("fraseChar = " + fraseChar);
     }
 }
