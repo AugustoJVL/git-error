@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Clase_4_5_6 {
     public static void main(String[] args) {
-        /*
+/*
         byte numEnteriByte = (byte)129;
         System.out.println("numEnteroByte = "+numEnteriByte);
         System.out.println("Valor minimo del Byte: "+ Byte.MIN_VALUE);
@@ -18,7 +18,7 @@ class Clase_4_5_6 {
         System.out.println("Valor minimo del int: "+ Integer.MIN_VALUE);
         System.out.println("Valor maximo del int: "+ Integer.MAX_VALUE);
 
-        /*var numEntero = 20;//sin punto numero entero
+        var numEntero = 20;//sin punto numero entero
         System.out.println("numEntero = " + numEntero);
         var numFloat = 10.0F;//con punto se transforma en tipo double
         System.out.println("numFloat = " + numFloat);
@@ -70,7 +70,7 @@ class Clase_4_5_6 {
         //la aplicacion toma de referencia el si esta bien o no
         // porque lo que hace es deshabilitar una linea o la
         // linea que no se use al m,omento de tipear
-
+*/
         //conversion de tipos primitivos
         var edad = Integer.parseInt("20"); //concatena solamente si dejas el 20 con comillas
         System.out.println("edad = " + (edad+1));
@@ -78,11 +78,11 @@ class Clase_4_5_6 {
         System.out.println("valorPI = " + valorPI);
 
         // pedir un valor
-        */var entrada = new Scanner(System.in);/*
+        var entrada = new Scanner(System.in);
         System.out.println("Digite su edad");
         edad = Integer.parseInt(entrada.nextLine());
         System.out.println("edad = " + edad);
-*/
+
         //conversion de tipos primitivos en java parte 2
         var edadTexto = String.valueOf(10);
         System.out.println("edadTexto = " + edadTexto);
@@ -93,5 +93,6 @@ class Clase_4_5_6 {
         System.out.println("Digite un caracter: ");
         fraseChar = entrada.nextLine().charAt(0);
         System.out.println("fraseChar = " + fraseChar);
+
     }
 }
