@@ -67,3 +67,19 @@ numero1 = int(input("Escribe el primer numero: "))
 numero2 = int(input("Escribe el segundo numero: "))
 resultado = numero1 + numero2
 print("El resultado de la suma es: ",resultado)
+
+#Se solicita incluir la siguiente información acerca de un libro:
+#título
+#autor
+#Debes imprimir la información en el siguiente formato:
+#Proporciona el título:
+#Proporciona el autor:
+#<título> fue escrito por <autor>
+#Preguntas de esta tarea
+#¿Cuál es el código del requerimiento solicitado?
+
+titulo = input("Titulo: ")#El Principito
+autor = input("Autor: ")#Antoine de Saint
+print(titulo+" fue escrito por "+autor)
+
+#el estilo del codigo es String

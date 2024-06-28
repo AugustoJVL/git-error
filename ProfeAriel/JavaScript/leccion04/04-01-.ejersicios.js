@@ -57,6 +57,8 @@ switch(mes2){
     case 9: case 10: case 11:
         estacion2 = "primavera";
         break;
+    default:
+        estacion2 = "valor incorrecto";
 }
 console.log("bienvendidos a la estacion: "+estacion);
 */
