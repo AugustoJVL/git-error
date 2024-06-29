@@ -1,0 +1,94 @@
+:root{
+    --fondo-proyectos: rgb(124, 123, 123);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+/* titulo del header */
+.titulo {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 3px rgba(255, 0, 0, 0.705);
+    font-family: sans-serif;
+    background-color: rgb(20, 20, 20);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(255, 0, 0, 0.842);
+}
+
+
+.navegacion {
+    margin-top: 45px;
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem;
+    padding: 0; 
+    list-style: none; 
+    flex-wrap: wrap; 
+}
+
+.navegacion li {
+    font-size: 1rem;
+    width: 100px;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(5, 5, 5);
+    box-shadow: 0 0 0.5rem rgba(255, 0, 0, 0.781);
+    list-style: none; 
+}
+
+a {
+    margin-bottom: 4px;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    text-shadow: 3px 3px 3px rgba(255, 0, 0, 0.808);
+    font-family: sans-serif;
+}
+
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*celular (pantalla pequeña, hasta 767px)*/
+@media (max-width: 767px) {
+    .titulo {
+        justify-content: center;
+    }
+    .navegacion {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+/* tableta (pantalla medianas, entre 768 y 1023 px) */
+@media (min-width: 768px) and (max-width: 1023px){
+    .titulo{
+        justify-content: center;
+    }
+    .navegacion{
+        gap: 2rem;
+        justify-content: center;
+    }
+}
+
+/* escritorio (pantallas anchas, 1024px y superiores) */
+@media (min-width: 1024px){
+    .titulo{
+        justify-content: flex-start;
+        margin-left: 300px;
+        margin-right: 300PX;
+    }
+    .navegacion{
+        gap: 1rem;
+        margin: 0 1rem;
+    }
+}

@@ -1,0 +1,96 @@
+footer{
+    background-color: rgb(24, 23, 23);
+    color: aliceblue;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer-info{
+    margin-bottom: 10px;
+}
+
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.footer-social a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 20, 20);
+    transition: background-color 0.3s;
+}
+
+
+.footer-social a:hover{
+    background-color: rgb(251, 255, 4);
+}
+
+
+.footer-social svg{
+    width: 24px;
+    height: 24px;
+    fill:rgb(0, 0, 0);
+}
+
+/*pantalla tablet*/
+@media (max-width: 768px){
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer-social{
+    flex-wrap: wrap;
+    gap:10px ;
+}
+
+.footer-social a{
+    width: 35px;
+    height: 35px;
+}
+
+.footer-social svg{
+    width: 20px;
+    height: 20px;
+}
+
+/*Estilo para mobiles*/
+@media (max-width: 480px){
+    footer{
+        padding: 15px 0;
+    }
+}
+
+.footer-info{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.footer-social a{
+    width: 30px;
+    height: 30px;
+}
+
+.footer-social svg{
+    width: 18px;
+    height: 18px;
+}

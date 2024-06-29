@@ -1,0 +1,43 @@
+.contacto {
+    margin-top: 5rem;
+    padding: 1rem;
+    background-color: rgb(44, 44, 44);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-contacto {
+    color: rgb(177, 0, 0); 
+    text-shadow: 0 0 9px rgb(161, 60, 60);
+    font-family: sans-serif; 
+    margin-bottom: 30px; 
+    font-size: 2rem;
+}
+.formulario-contacto {
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: rgb(112, 24, 24);
+    border: 4px solid rgba(61, 61, 61, 0.178);
+    border-radius: 5px;
+    box-shadow: 0 2px 12px rgba(255, 0, 0, 0.781);
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 60vh; 
+}
+
+/* Media queries para responsividad */
+@media (max-width: 767px) {
+    .formulario-contacto {
+        padding: 0.5rem;
+    }
+
+    iframe {
+        height: 70vh; 
+    }
+}
